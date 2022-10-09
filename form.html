@@ -1,20 +1,74 @@
-<h1 id ="title"> SURVEY FORM</h1>
-<p id = "description">This is our survey form</p>
-<form id="survey-form">
-  <label id="name-label">name</label>
-  <input id="name" type ="text" required placeholder="name">
-  <label  id="email-label">email</label>
-  <input id ="email" type="email" required placeholder="email">
-  <label  id="number-label">number</label>
-  <input type="number" id="number" min="5" max="10" required placeholder="number">
-  <input type="radio" attribute="name" value ="Male" name="male">
-  <input type="radio" attribute="name" value="female" name="female">
-  <input type="checkbox" attribute="value" value ="value">
-  <input type="checkbox" attribute="value" value ="value">
-  <select name="cars" id="dropdown">
-  <option value="volvo">Volvo</option>
-  <option value="saab">BMW</option>
-  </select>
-  <textarea id="" name="" rows="4" cols="50"></textarea><br><br>
-  <input id="submit" type="submit">
-    </form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark and Franck</title>
+  <style>
+    input[type=text],input[type=email],select,textarea{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+
+}
+ input[type=number]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    
+
+}
+button{
+    display: block;
+    color: #000;
+    padding: 14px 8px;
+    text-decoration: none;
+    width: 30%;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+button:hover{
+    background-color: #555;
+    color: white;
+    border-radius: 20px;
+}
+  </style>
+</head>
+<body>
+  <h1 id ="title"> SURVEY FORM</h1>
+  <p id = "description">This is our survey form</p>
+  <form id="survey-form">
+    <label id="name-label">name</label>
+    <input id="name" type ="text" required placeholder="name"><br>
+    <label  id="email-label">email</label>
+    <input id ="email" type="email" required placeholder="email"><br>
+    <label  id="number-label">number</label>
+    <input type="number" id="number" min="5" max="10" required placeholder="number"><br>
+    <input type="radio" attribute="name" value ="Male" name="male">Male
+    <input type="radio" attribute="name" value="female" name="female">Female<br>
+    <input type="checkbox" attribute="value" value ="value">First<br>
+    <input type="checkbox" attribute="value" value ="value">Second<br>
+    <select name="cars" id="dropdown">
+    <option value="volvo">Volvo</option>
+    <option value="saab">BMW</option>
+    </select><br>
+    <textarea id="" name="" rows="4" cols="50"></textarea><br><br>
+    <button id="submit" type="submit">Submit</button>
+      </form> 
+</body>
+</html>
